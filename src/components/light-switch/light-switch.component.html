@@ -1,0 +1,14 @@
+<div class="light-switch" >
+
+  <div *ngFor="let div of divsToGenerate; let i = index"
+       class="switch"
+       (click)="selectSwitch(i)"
+       id="{{'div-' + i}}"
+       [ngClass]="{'selected': i === selectedSwitchIndex}"
+       [ngStyle]="{
+       'width': (200 / initialNumber) + 'px',
+       'height': (200 / initialNumber) + 'px'
+       }">
+  </div>
+
+</div>

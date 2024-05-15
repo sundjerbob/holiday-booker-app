@@ -1,0 +1,39 @@
+/* LightSwitch component */
+
+.light-switch {
+  top: 100px;
+  left: 10%;
+  height: 200px;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  background-color: #ff8800;
+
+  .switch {
+    cursor: pointer;
+    margin: auto;
+    border-radius: 50%;
+    //align-items: center;
+    //justify-content: center;
+    //background-color: #fff;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    position: relative;
+  }
+
+  .switch:hover {
+    box-shadow:
+      0 0 60px 30px #fff,  /* inner white */
+      0 0 100px 60px #ff8800, /* middle magenta */
+      0 0 140px 90px #ffcc00; /* outer cyan */
+  }
+
+  .switch.selected {
+    box-shadow:
+      0 0 60px 30px #fff,  /* inner white */
+      0 0 100px 60px #ff8800, /* middle magenta */
+      0 0 140px 90px #ffcc00; /* outer cyan */
+  }
+
+  .switch.selected:hover {
+  }
+}

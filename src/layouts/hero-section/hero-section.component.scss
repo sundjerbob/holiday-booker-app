@@ -1,0 +1,36 @@
+/* hero-section */
+
+.hero-section {
+  left: 0;
+  top: 0;
+  font-size: 50px;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: white;
+
+  .billboard {
+    height: 70vh;
+    margin-top: 5vh;
+    top: 20px;
+    background-image: url("../../assets/screen3.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    width: 90vw;
+  }
+
+  h1 {
+    margin-left: 100px;
+    height: 400px;
+    width: 50%;
+    top:200px;
+    color: white;
+  }
+  p {
+    margin-left: 100px;
+    top:350px;
+    color: white;
+  }
+
+}
