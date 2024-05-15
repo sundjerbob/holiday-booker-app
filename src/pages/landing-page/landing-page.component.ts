@@ -5,8 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.scss'
 })
-export class LandingPageComponent {
-  public logClick() {
-    console.log('ssssssss');
-  }
-}
+export class LandingPageComponent { }
