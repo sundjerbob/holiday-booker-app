@@ -1,0 +1,6 @@
+<!-- billboard.component -->
+<div class="billboard">
+  <div *ngFor="let url of images; let i = index;" [hidden]="i !== currentDisplayedIndex">
+    <div class="image" [style.background-image]="'url(' + url + ')'"></div>
+  </div>
+</div>

@@ -1,3 +1,5 @@
+/* top-navigation.component */
+
 .top-navigation {
   background-color: #ecdbdb;
   z-index: 9999;
@@ -7,4 +9,23 @@
   width: 100vw;
   position: fixed;
   top: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 60%;
+  //justify-content: center;
+
+  span {
+    margin-right: 100px;
+    cursor: pointer;
+  }
+  span:first-child {
+    color: dodgerblue;
+    font-weight: bold;
+    font-size: 35px;
+  }
+  span:hover {
+    zoom: 1.1;
+    color: orange;
+  }
 }
