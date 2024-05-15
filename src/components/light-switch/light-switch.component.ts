@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import {Component, OnInit, Input} from '@angular/core';
 
 @Component({
   selector: 'app-light-switch',
@@ -25,7 +25,6 @@ export class LightSwitchComponent implements OnInit {
   }
 
   public selectSwitch(index: number): void {
-    alert('aaa');
     this.selectedSwitchIndex = index;
   }
 

@@ -1,4 +1,4 @@
-<div class="light-switch" >
+<div class="light-switch">
 
   <div *ngFor="let div of divsToGenerate; let i = index"
        class="switch"
@@ -6,9 +6,15 @@
        id="{{'div-' + i}}"
        [ngClass]="{'selected': i === selectedSwitchIndex}"
        [ngStyle]="{
-       'width': (200 / initialNumber) + 'px',
-       'height': (200 / initialNumber) + 'px'
+       'margin-right': initialNumber - 1 === i ? '0' : '50px',
        }">
+  </div>
+
+  <div class="pointer"
+       [ngStyle]="{
+       'transform' : 'translateX(' + ((selectedSwitchIndex - 2) * (50 + 15 + 1) ) + 'px)'}"
+  >
+
   </div>
 
 </div>
