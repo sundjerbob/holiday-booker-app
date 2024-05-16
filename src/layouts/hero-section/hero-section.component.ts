@@ -15,6 +15,11 @@ export class HeroSectionComponent {
     '/assets/screen7.jpg',
   ];
 
- public currentDisplayedIndex: number = 0;
+  widths: number[] = [600, 300, 366, 387, 460];
+  heights: number[] = [400, 200, 274, 259, 307];
+  zoomRatio: number[] = [2, 2.5, 3.5, 1.7, 1.5];
+
+
+  public currentDisplayedIndex: number = 0;
 }
 

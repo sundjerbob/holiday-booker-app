@@ -3,8 +3,10 @@
   <div *ngFor="let url of images; let i = index;" [hidden]="i !== currentDisplayedIndex">
     <div class="image"
          [style.background-image]="'url(' + url + ')'"
+         [style.width]="getWidthForImage(i) + 'px'"
+         [style.height]="getHeightForImage(i) + 'px'"
     >
-    helo my nigga {{currentDisplayedIndex}}
+      helo my nigga {{ currentDisplayedIndex }}
     </div>
 
   </div>

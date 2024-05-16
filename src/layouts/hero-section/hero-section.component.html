@@ -1,23 +1,24 @@
 <div class="hero-section">
 
+  <!-- billboard component -->
   <app-billboard-component
     [images]=images
-    [currentDisplayedIndex]=currentDisplayedIndex>
+    [currentDisplayedIndex]=currentDisplayedIndex
+    [widths]=widths
+    [heights]=heights
+    [zoomRatio]=zoomRatio>
   </app-billboard-component>
 
-<!--  <div class="billboard"></div>-->
+  <!-- main title -->
+  <h1> Book Montenegro </h1>
 
-  <h1 > Book Montenegro </h1>
-
+  <!-- sub --->
   <p>Book your montenigro expirence</p>
 
   <app-light-switch
     [initialNumber]="5"
     [selectedSwitchIndex]=currentDisplayedIndex
-    (selectedSwitchChange)="currentDisplayedIndex = $event"
-
-  >
-
+    (selectedSwitchChange)="currentDisplayedIndex = $event">
   </app-light-switch>
 
 </div>
