@@ -11,9 +11,11 @@ import {BillboardComponent} from "./billboard/billboard.component";
       BillboardComponent
     ],
     imports: [CommonModule],
-  exports: [
-    LightSwitchComponent,
-    TopNavigationComponent]
+    exports: [
+        LightSwitchComponent,
+        TopNavigationComponent,
+        BillboardComponent
+    ]
 })
 
 export class ComponentsModule {
