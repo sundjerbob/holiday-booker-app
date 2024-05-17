@@ -1,8 +1,8 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {BrowserModule, provideClientHydration} from '@angular/platform-browser';
 
-import { AppRoutingModule } from '../router/app-routing.module';
-import { AppRootComponent } from './root-component/app-root.component';
+import {AppRoutingModule} from '../router/app-routing.module';
+import {AppRootComponent} from './root-component/app-root.component';
 import {PagesModule} from "../pages/pages.module";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
@@ -21,4 +21,5 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
   ],
   bootstrap: [AppRootComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

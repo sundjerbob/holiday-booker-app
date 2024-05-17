@@ -1,4 +1,17 @@
+/* GLOBAL STYLES */
+
+// web-site global settings
 :root {
-  overflow-x: clip;
-  overflow-y: hidden;
+
+  overflow-x: clip; // horizontal page movement *disabled*
+  scroll-behavior: smooth; // scrolling is animated smoothly rather than in a single jump
+
+
+  scrollbar-width: none; /* y-scroll-bar disabled for Firefox */
+  -ms-overflow-style: none; /* y-scroll-bar disabled for Internet Explorer and Edge */
+
+  // y-scroll-bar disabled for Chrome, Safari, and Opera
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }

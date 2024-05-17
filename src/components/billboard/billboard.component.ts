@@ -48,6 +48,7 @@ export class BillboardComponent {
     return this.widths === undefined || this.zoomRatio === undefined ? 1 : this.widths[index] * this.zoomRatio[index];
   }
 
+
   public getHeightForImage(index: number): number {
     return this.heights === undefined || this.zoomRatio == undefined ? 1 : this.heights[index] * this.zoomRatio[index];
   }
