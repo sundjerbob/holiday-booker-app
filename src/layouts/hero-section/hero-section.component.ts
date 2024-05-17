@@ -17,7 +17,7 @@ export class HeroSectionComponent {
 
   widths: number[] = [600, 300, 366, 387, 460];
   heights: number[] = [400, 200, 274, 259, 307];
-  zoomRatio: number[] = [2, 2.5, 3.5, 1.7, 1.5];
+  zoomRatio: number[] = [1.7, 2.5, 3.5, 1.7, 1.5];
 
 
   public currentDisplayedIndex: number = 0;

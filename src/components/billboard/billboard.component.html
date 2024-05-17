@@ -1,13 +1,12 @@
 <!-- billboard.component -->
 <div class="billboard">
-  <div *ngFor="let url of images; let i = index;" [hidden]="i !== currentDisplayedIndex">
+  <div *ngFor="let url of images; let i = index;">
     <div class="image"
+         [@imgState]="(i === currentDisplayedIndex) ? 'on' : 'off'"
          [style.background-image]="'url(' + url + ')'"
          [style.width]="getWidthForImage(i) + 'px'"
-         [style.height]="getHeightForImage(i) + 'px'"
-    >
+         [style.height]="getHeightForImage(i) + 'px'">
       hello from {{ currentDisplayedIndex }} !
     </div>
-
   </div>
 </div>

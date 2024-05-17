@@ -8,12 +8,26 @@
   width: 100vw;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 
   .image {
-
-    background-size: contain; /* Makes the image fit into the div while maintaining its aspect ratio */
+    position: absolute;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
   }
-
 }
+
+/* .image.on {
+   filter: blur(0);
+   transform: translateX(0);
+   display: block;
+ }
+
+ .image.off {
+   display: none;
+   transform: translateX(-25%);
+   filter: blur(10px);
+ }*/
+
+
