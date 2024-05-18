@@ -10,7 +10,7 @@
   background-color: white;
 
 
-  h1 {
+  /*h1 {
     position: absolute;
     margin-left: 100px;
     height: 400px;
@@ -25,5 +25,11 @@
     top:350px;
     color: white;
   }
+  */
 
+  .text-billboard {
+    position: absolute;
+    top: 350px;
+    left: 64%;
+  }
 }

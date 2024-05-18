@@ -9,11 +9,12 @@
     [zoomRatio]=zoomRatio>
   </app-billboard-component>
 
-  <!-- main title -->
-  <h1> Book Montenegro </h1>
 
-  <!-- sub --->
-  <p>Book your montenigro expirence</p>
+  <app-text-billboard class="text-billboard"
+    [texts]="texts"
+    [currentDisplayedIndex]="currentDisplayedIndex">
+  </app-text-billboard>
+
 
   <app-light-switch
     [initialNumber]="5"

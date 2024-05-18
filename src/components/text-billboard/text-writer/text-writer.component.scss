@@ -1,0 +1,28 @@
+/* text-writer */
+
+.text-writer {
+  position: relative;
+  /*font-family: "Jersey 20", sans-serif;
+  font-weight: 400;
+  font-style: normal;*/
+
+  .character {
+    visibility: hidden;
+    opacity: 0;
+
+    // Add here the initial position of the text.
+    transform: translateX(-20px);
+    transition: visibility 0.2s ease-out,
+    opacity 0.2s ease-out,
+    transform 0.4s ease-out;
+    will-change: opacity, visibility, transform;
+
+    &.visible {
+      visibility: visible;
+      opacity: 1;
+
+      // Text will move to the original position (0) when it’s visible.
+      transform: translateX(0);
+    }
+  }
+}

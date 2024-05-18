@@ -1,0 +1,11 @@
+<!-- text-writer -->
+
+<div *ngIf="renderComponent">
+  <div class="text-writer">
+
+    <span *ngFor="let character of characters"
+          [style.transition-delay]="character.delay + 'ms'"
+          class="character"
+          [ngClass]="{'visible': character.delay <= currentTime }">{{ character.char }}</span>
+  </div>
+</div>
