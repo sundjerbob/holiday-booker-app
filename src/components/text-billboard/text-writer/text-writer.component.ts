@@ -46,7 +46,6 @@ export class TextWriterComponent implements OnInit, OnDestroy, OnChanges {
     }
   }
 
-
   restartAnimation(): void {
     this.renderComponent = false;
     setTimeout(() => {
