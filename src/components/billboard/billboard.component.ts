@@ -38,7 +38,6 @@ export class BillboardComponent implements OnInit {
   /* try to not change this since there is 5 buttons for nav */
   protected billboardLength = 5;
 
-
   /* CHANGE THOSE */
   /***********************************/
   /* Aspect ratio for images */
@@ -46,7 +45,6 @@ export class BillboardComponent implements OnInit {
   /* Offset the index for first image */
   protected indexOffset = 7;
   /***********************************/
-
 
   public widths: number[] = [];
   public heights: number[] = [];
