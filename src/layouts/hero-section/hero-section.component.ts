@@ -1,9 +1,9 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-hero-section',
   templateUrl: './hero-section.component.html',
-  styleUrl: './hero-section.component.scss'
+  styleUrls: ['./hero-section.component.scss']
 })
 export class HeroSectionComponent {
 
@@ -15,9 +15,6 @@ export class HeroSectionComponent {
     '/assets/screen7.jpg',
   ];
 
-  widths: number[] = [600, 300, 366, 387, 460];
-  heights: number[] = [400, 200, 274, 259, 307];
-  zoomRatio: number[] = [1.9, 3.5, 3.5, 2.9, 2.5];
   texts: string[] = [
     'Dodjite u CE Ge ',
     'Najboljse se mece u dvie ',
@@ -26,7 +23,5 @@ export class HeroSectionComponent {
     'skituljko...'
   ];
 
-
   public currentDisplayedIndex: number = 0;
 }
-

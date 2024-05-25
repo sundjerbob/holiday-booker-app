@@ -1,25 +1,18 @@
 <div class="hero-section">
-
   <!-- billboard component -->
   <app-billboard-component
-    [images]=images
-    [currentDisplayedIndex]=currentDisplayedIndex
-    [widths]=widths
-    [heights]=heights
-    [zoomRatio]=zoomRatio>
+    [images]="images"
+    [currentDisplayedIndex]="currentDisplayedIndex">
   </app-billboard-component>
 
-
   <app-text-billboard class="text-billboard"
-    [texts]="texts"
-    [currentDisplayedIndex]="currentDisplayedIndex">
+                      [texts]="texts"
+                      [currentDisplayedIndex]="currentDisplayedIndex">
   </app-text-billboard>
-
 
   <app-light-switch
     [initialNumber]="5"
-    [selectedSwitchIndex]=currentDisplayedIndex
+    [selectedSwitchIndex]="currentDisplayedIndex"
     (selectedSwitchChange)="currentDisplayedIndex = $event">
   </app-light-switch>
-
 </div>
