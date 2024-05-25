@@ -1,6 +1,6 @@
-import { Component, Input, OnInit, PLATFORM_ID, Inject } from '@angular/core';
-import { isPlatformBrowser } from '@angular/common';
-import { animate, state, style, transition, trigger } from '@angular/animations';
+import {Component, Input, OnInit, PLATFORM_ID, Inject} from '@angular/core';
+import {isPlatformBrowser} from '@angular/common';
+import {animate, state, style, transition, trigger} from '@angular/animations';
 
 @Component({
   selector: 'app-billboard-component',
@@ -31,11 +31,22 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
 })
 export class BillboardComponent implements OnInit {
 
+  /* drilled state variable */
   @Input() currentDisplayedIndex?: number;
-  protected imgRatio = 0.75;
+  /* Don't change this */
   protected imgUrlBase: string = '/assets/screen';
-  protected indexOffset = 7;
+  /* try to not change this since there is 5 buttons for nav */
   protected billboardLength = 5;
+
+
+  /* CHANGE THOSE */
+  /***********************************/
+  /* Aspect ratio for images */
+  protected imgRatio = 0.75;
+  /* Offset the index for first image */
+  protected indexOffset = 7;
+  /***********************************/
+
 
   public widths: number[] = [];
   public heights: number[] = [];
@@ -43,7 +54,8 @@ export class BillboardComponent implements OnInit {
   public zoomRatio: number[] = [];
   public imageIndices: number[] = [];
 
-  constructor(@Inject(PLATFORM_ID) private platformId: Object) { }
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {
+  }
 
   ngOnInit() {
     if (isPlatformBrowser(this.platformId)) {
@@ -53,7 +65,7 @@ export class BillboardComponent implements OnInit {
   }
 
   private initializeImageIndices() {
-    this.imageIndices = Array.from({ length: this.billboardLength }, (_, i) => i);
+    this.imageIndices = Array.from({length: this.billboardLength}, (_, i) => i);
   }
 
   private loadImageRatios() {
