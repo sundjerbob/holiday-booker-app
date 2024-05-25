@@ -7,13 +7,6 @@ import { Component } from '@angular/core';
 })
 export class HeroSectionComponent {
 
-  images: string[] = [
-    '/assets/screen3.jpg',
-    '/assets/screen4.jpg',
-    '/assets/screen5.jpg',
-    '/assets/screen6.jpg',
-    '/assets/screen7.jpg',
-  ];
 
   texts: string[] = [
     'Dodjite u CE Ge ',
