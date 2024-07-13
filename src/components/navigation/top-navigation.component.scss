@@ -1,7 +1,7 @@
-/* top-navigation.component */
+/* navigation.component */
 
 .top-navigation {
-  background-color: #ecdbdb;
+  background-color: #10156e;
   z-index: 9999;
   left: 0;
   opacity: 0.7;
@@ -15,6 +15,11 @@
   padding-left: 60%;
   //justify-content: center;
 
+  .logo {
+    position: fixed;
+    top: 2%;
+    left: 10%;
+  }
   span {
     margin-right: 100px;
     cursor: pointer;

@@ -1,31 +1,11 @@
-/* hero-section */
+/* hero-section-component.scss */
 
 .hero-section {
-  left: 0;
-  top: 0;
   font-size: 50px;
   width: 100vw;
   height: 100vh;
-  position: absolute;
+  position: relative; /* Changed from absolute to relative */
   background-color: white;
-
-
-  /*h1 {
-    position: absolute;
-    margin-left: 100px;
-    height: 400px;
-    width: 50%;
-    top:200px;
-    color: white;
-  }
-
-  p {
-    position: absolute;
-    margin-left: 100px;
-    top:350px;
-    color: white;
-  }
-  */
 
   .text-billboard {
     position: absolute;
