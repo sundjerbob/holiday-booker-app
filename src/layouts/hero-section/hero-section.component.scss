@@ -35,8 +35,14 @@
 
   app-reservation-search {
     position: absolute;
-    bottom: 0; /* Align it to the bottom of the screen */
+    top: calc(100% - 60px); /* Adjust to position it so only the title is visible */
     left: 50%;
-    transform: translateX(-50%); /* Center it horizontally */
+    transform: translateX(-50%);
+    transition: transform 0.5s ease, top 0.5s ease; /* Add transition for smooth animation */
+  }
+
+  app-reservation-search:hover {
+    top: calc(100% - 210px); /* Bring the component up by 150px */
+    transform: translateX(-50%); /* Ensure it remains centered */
   }
 }
