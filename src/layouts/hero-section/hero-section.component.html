@@ -9,10 +9,11 @@
     Welcome to Montenegro
   </h1>
 
-  <app-text-billboard class="text-billboard"
-                      [texts]="texts"
-                      [currentDisplayedIndex]="currentDisplayedIndex">
-  </app-text-billboard>
+
+<!--  <app-text-billboard class="text-billboard"-->
+<!--                      [texts]="texts"-->
+<!--                      [currentDisplayedIndex]="currentDisplayedIndex">-->
+<!--  </app-text-billboard>-->
 
   <app-light-switch
     [initialNumber]="5"
@@ -20,4 +21,7 @@
     (selectedSwitchChange)="currentDisplayedIndex = $event">
   </app-light-switch>
 
+  <app-reservation-search>
+
+  </app-reservation-search>
 </div>

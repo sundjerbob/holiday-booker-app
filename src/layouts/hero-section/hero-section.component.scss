@@ -9,7 +9,7 @@
 
   h1 {
     position: absolute; /* Position absolutely within the parent */
-    top: 50%; /* Move to the center vertically */
+    top: 40%; /* Adjust to slightly above the center */
     left: 50%; /* Move to the center horizontally */
     transform: translate(-50%, -50%); /* Offset by half of its own width and height */
     font-size: 64px;
@@ -24,5 +24,19 @@
     position: absolute;
     top: 350px;
     left: 64%;
+  }
+
+  app-light-switch {
+    position: absolute;
+    top: 50%; /* Position it slightly below the title */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center it horizontally */
+  }
+
+  app-reservation-search {
+    position: absolute;
+    bottom: 0; /* Align it to the bottom of the screen */
+    left: 50%;
+    transform: translateX(-50%); /* Center it horizontally */
   }
 }
