@@ -1,20 +1,13 @@
 <div class="light-switch">
-
   <div *ngFor="let div of divsToGenerate; let i = index"
        class="switch"
        (click)="selectSwitch(i)"
        id="{{'div-' + i}}"
        [ngClass]="{'selected': i === selectedSwitchIndex}"
-       [ngStyle]="{
-       'margin-right': initialNumber - 1 === i ? '0' : '50px',
-       }">
+       [ngStyle]="{'margin-right': initialNumber - 1 === i ? '0' : '15px'}"> <!-- Adjusted spacing here -->
   </div>
 
   <div class="pointer"
-       [ngStyle]="{
-       'transform' : 'translateX(' + ((selectedSwitchIndex - 2) * (50 + 15 + 1) ) + 'px)'}"
-  >
-
+       [ngStyle]="{'transform' : 'translateX(' + ((selectedSwitchIndex - 2) * (15 + 20 + 1) ) + 'px)'}"> <!-- Adjusted spacing and size here -->
   </div>
-
 </div>

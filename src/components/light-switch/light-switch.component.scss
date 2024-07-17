@@ -1,4 +1,4 @@
-/* LightSwitch component */
+/* light-switch.component.scss */
 
 .light-switch {
   z-index: 99999;
@@ -15,40 +15,28 @@
   .switch {
     cursor: pointer;
     border-radius: 50%;
-    transition: background-color 0.4s, box-shadow 0.3s;
-    width: 15px;
-    height: 15px;
-
-    background: linear-gradient(to right, rgba(155, 155, 155, 0.1), rgba(155, 155, 155, 0.5));
-    backdrop-filter: blur(10px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.4s;
+    width: 15px; /* Increased size */
+    height: 15px; /* Increased size */
+    background: #FFFFFF; /* Color for non-currently-selected circles */
+    margin-right: 20px; /* Reduced spacing */
+    /* Remove shadow */
   }
 
-  .switch:hover {
-    /*box-shadow: 0 0 10px 5px #fff,
-    0 0 16px 10px #ff8800,
-    0 0 23px 15px #ffcc00;*/
+  .switch:last-child {
+    margin-right: 0; /* Remove margin for the last child */
   }
 
   .switch.selected {
-    background-color: transparent;
+    background: #616161;
   }
 
-  .switch.selected:hover {
-  }
-
-  .pointer {
-    backdrop-filter: blur(2.6px);
-    box-shadow: 0 0 10px 5px #fff,
-    0 0 16px 10px #ff8800,
-    0 0 23px 15px #ffcc00;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    position: absolute;
-    background-color: #ffcc00;
-    transition: transform 0.3s ease-out;
-  }
-
-
+  //.pointer {
+  //  width: 15px; /* Increased size */
+  //  height: 15px;
+  //  border-radius: 50%;
+  //  position: absolute;
+  //  background: #D9D9D94D; /* Color for currently selected circle */
+  //  transition: transform 0.3s ease-out;
+  //}
 }

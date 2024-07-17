@@ -5,15 +5,18 @@
     [currentDisplayedIndex]="currentDisplayedIndex">
   </app-billboard-component>
 
-  <h1 class="sora-font">
-    Welcome to Montenegro
-  </h1>
+  <div class="title sora-font">
+    <h1>
+      Welcome to Montenegro
+    </h1>
 
+    <app-text-billboard class="text-billboard"
+                        [texts]="texts"
+                        [currentDisplayedIndex]="currentDisplayedIndex">
+    </app-text-billboard>
 
-<!--  <app-text-billboard class="text-billboard"-->
-<!--                      [texts]="texts"-->
-<!--                      [currentDisplayedIndex]="currentDisplayedIndex">-->
-<!--  </app-text-billboard>-->
+  </div>
+
 
   <app-light-switch
     [initialNumber]="5"

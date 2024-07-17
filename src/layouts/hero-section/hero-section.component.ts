@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-hero-section',
@@ -9,11 +9,11 @@ export class HeroSectionComponent {
 
 
   texts: string[] = [
-    'Dodjite u CE Ge ',
-    'Najboljse se mece u dvie ',
-    'Iljade trece , apartmani , aAAAAAAAAAAAAAAAAAa aaaa jel moguce /??',
-    'Gospodi pomiluj',
-    'skituljko...'
+    'Where you can explore the enchanting Adriatic Sea and historic charm.',
+    'Where you can explore the enchanting Adriatic Sea and historic charm.',
+    'Mole vas Cicvanic i sinovi.',
+    'Dodjite ameri molem vas',
+    'Because I got it on me , u can run up if u want'
   ];
 
   public currentDisplayedIndex: number = 0;

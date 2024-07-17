@@ -1,13 +1,12 @@
-import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-light-switch',
   templateUrl: './light-switch.component.html',
-  styleUrl: './light-switch.component.scss'
+  styleUrls: ['./light-switch.component.scss']
 })
-
 export class LightSwitchComponent implements OnInit {
-  
+
   divsToGenerate: number[] = [];
 
   @Input() selectedSwitchIndex!: number;
@@ -16,24 +15,20 @@ export class LightSwitchComponent implements OnInit {
 
   @Output() selectedSwitchChange = new EventEmitter<number>();
 
-  constructor() {
-  }
+  constructor() { }
 
   ngOnInit(): void {
     this.initDivs(this.initialNumber);
   }
 
   private initDivs(numberOfDivs: number): void {
-    this.divsToGenerate = Array.from({length: numberOfDivs}, (_, i) => i);
-    console.log(this.divsToGenerate);
+    this.divsToGenerate = Array.from({ length: numberOfDivs }, (_, i) => i);
   }
-
 
   public selectSwitch(index: number): void {
     this.selectedSwitchIndex = index;
     this.selectedSwitchChange.emit(this.selectedSwitchIndex);
   }
-
 }
 
 export default LightSwitchComponent;
