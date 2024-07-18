@@ -1,6 +1,7 @@
 /* hero-section-component.scss */
 
 .hero-section {
+
   font-size: 50px;
   width: 100vw;
   height: 100vh;
@@ -21,13 +22,13 @@
       font-weight: 600;
       margin: 0; /* Remove default margin */
     }
+
     .text-billboard {
       font-size: 26px;
       line-height: 50px;
       font-weight: 200;
     }
   }
-
 
 
   app-light-switch {
@@ -39,14 +40,14 @@
 
   app-reservation-search {
     position: absolute;
-    top: calc(100% - 60px);
+    top: calc(100% - 80px);
     left: 50%;
     transform: translateX(-50%);
     transition: transform 0.5s ease, top 0.5s ease; /* Add transition for smooth animation */
   }
 
   app-reservation-search:hover {
-    top: calc(100% - 210px); /* Bring the component up by 150px */
+    top: calc(100% - 250px); /* Bring the component up by 150px */
     transform: translateX(-50%); /* Ensure it remains centered */
   }
 }

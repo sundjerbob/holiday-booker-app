@@ -16,9 +16,9 @@
     cursor: pointer;
     border-radius: 50%;
     transition: background-color 0.4s;
-    width: 15px; /* Increased size */
-    height: 15px; /* Increased size */
-    background: #FFFFFF; /* Color for non-currently-selected circles */
+    width: 12px; /* Increased size */
+    height: 12px; /* Increased size */
+    background: #E5E7CB; /* Color for non-currently-selected circles */
     margin-right: 20px; /* Reduced spacing */
     /* Remove shadow */
   }
@@ -28,7 +28,8 @@
   }
 
   .switch.selected {
-    background: #616161;
+    background: #D9D9D9;
+    opacity: 30%;
   }
 
   //.pointer {

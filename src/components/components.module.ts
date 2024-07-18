@@ -6,6 +6,7 @@ import {BillboardComponent} from "./billboard/billboard.component";
 import {TextWriterComponent} from "./text-billboard/text-writer/text-writer.component";
 import {TextBillboardComponent} from "./text-billboard/text-billboard.component";
 import {ReservationSearchComponent} from './reservation-search/reservation-search.component';
+import {BasicOfferComponent} from './basic-offer/basic-offer.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import {ReservationSearchComponent} from './reservation-search/reservation-searc
     BillboardComponent,
     TextWriterComponent,
     TextBillboardComponent,
-    ReservationSearchComponent
+    ReservationSearchComponent,
+    BasicOfferComponent
   ],
   imports: [CommonModule, NgOptimizedImage],
   exports: [

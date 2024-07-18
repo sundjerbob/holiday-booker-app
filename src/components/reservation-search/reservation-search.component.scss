@@ -3,33 +3,30 @@
 .reservation-search {
 
   background: #FFFFFF;
-  padding: 20px 0 0 0;
+  padding: 25px 40px;
 
   border-radius: 12px; /* Increase the visibility of the border radius */
   border: 1px solid #EFEFEF;
-  width: 1200px; /* Fixed width */
 
-  height: 200px; /* Reduced height */
+  height: 180px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: auto;
-  font-size: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px; /* Reduced gap between elements */
 
   .reservation-title {
-    height: 60px;
+    height: 55px;
     text-align: center;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 600;
   }
 
   .reservation-form {
 
     background: #FAFAF5;
-    width: 1150px; /* Fill width */
-    padding: 12px;
+    height: 80px;
+    padding: 20px;
     border-radius: 12px; /* Increase the visibility of the border radius */
     display: flex;
     justify-content: space-between;
@@ -37,73 +34,83 @@
     gap: 20px; /* Gap between form groups */
 
     .form-group {
-
+      height: 45px;
       width: 240px; /* Fill width */
       display: flex;
       flex-direction: row;
       align-items: center;
-      gap: 6px; /* Reduced gap between label and input */
-
+      justify-content: start  ;
 
       img {
-        width: 54px;
-        height: 54px;
+        width: 60px;
+        height: 60px;
+        margin-top: auto;
+        margin-bottom: auto;
       }
 
       .input-group {
+        justify-content: center;
         display: flex;
         flex-direction: column;
         align-items: start;
-        gap: 12px; /* Gap between icon and select */
-
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 160px;
 
         .form-label {
-          padding-left: 10px;
-          font-family: 'Poppins', sans-serif;
-          font-size: 18px;
+          padding-left: 12px;
+          font-size: 14px;
           font-weight: 500;
-          line-height: 24px;
+          line-height: 18px;
           text-align: left;
           color: #9C9C9C;
         }
 
+
         .form-input {
-          font-family: 'Poppins', sans-serif;
           font-size: 16px;
           font-weight: 500;
-          line-height: 16px;
+          line-height: 12px;
           text-align: left;
           padding: 10px;
-          border: 0;
           border-radius: 5px;
           color: #616161;
           background: transparent;
           width: 100%; /* Fill width */
+          cursor: pointer;
+          border: 1px solid transparent;
+
         }
+
+        //.form-input:hover {
+        //  border: 1px solid #0B2434;
+        //  transition: 0.2s;
+        //
+        //}
+
+
       }
     }
 
     .divider {
       width: 1px;
-      height: 40px; /* Adjust height as needed */
-      background-color: #ddd; /* Divider color */
+      height: 45px; /* Adjust height as needed */
+      background-color: #DDD; /* Divider color */
     }
 
     .search-button {
       width: 200px; /* Fixed width */
-      height: 48px; /* Reduced height */
+      height: 68px; /* Reduced height */
       background: #0B2434;
-      color: #ffffff;
+      color: #FFFFFF;
       border: none;
       border-radius: 5px;
       cursor: pointer;
       display: flex;
-
       align-items: center;
       justify-content: center;
-      gap: 12px; /* Gap between icon and text */
-
-      margin-right: 40px;
+        font-size: 20px;
+      font-family: 'Poppins', 'lg/Medium', serif;
 
     }
   }
