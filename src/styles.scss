@@ -50,10 +50,7 @@ app-root {
 /* typography.scss */
 
 .lg-medium {
-  font-family: 'Poppins', sans-serif;
-  font-size: 18px;
+  font-family: 'Poppins', 'lg/Medium', serif;
   font-weight: 500;
-  line-height: 28px;
-  text-align: left;
 }
 

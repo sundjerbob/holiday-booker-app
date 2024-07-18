@@ -19,8 +19,9 @@ import {isPlatformBrowser} from "@angular/common";
 })
 
 export class TextWriterComponent implements OnInit, OnDestroy, OnChanges {
+
   @Input() text?: string;
-  @Input() deltaTime = 25;
+  @Input() deltaTime = 15;
 
   characters: { char: string, delay: number }[] = [];
   currentTime = 0;

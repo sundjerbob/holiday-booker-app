@@ -1,10 +1,10 @@
 <!-- billboard-component.html -->
 
 <div class="billboard">
-  <div *ngFor="let i of imageIndices">
+  <div *ngFor="let img of imageIndices">
     <div class="image"
-         [@imgState]="(i === currentDisplayedIndex) ? 'on' : 'off'"
-         [style.background-image]="'url(' + imgUrlBase + i + (i === 1 ? '.svg' : '.jpg') + ')'">
+         [@imgState]="(img.idx === currentDisplayedIndex) ? 'on' : 'off'"
+         [style.background-image]="'url(' + img.src + ')'">
     </div>
   </div>
 </div>

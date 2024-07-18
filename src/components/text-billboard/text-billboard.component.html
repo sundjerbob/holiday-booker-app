@@ -1,9 +1,9 @@
 <!-- text-billboard -->
 
-<!--<div>-->
-  <ng-container *ngFor="let text of texts; let i = index">
-    <app-text-writer *ngIf="i === currentDisplayedIndex"
-                     [text]="text">
-    </app-text-writer>
-  </ng-container>
-<!--</div>-->
+<ng-container *ngFor="let text of texts; let i = index">
+  <app-text-writer *ngIf="i === currentDisplayedIndex"
+                   [text]="text"
+                   [deltaTime]="10"
+  >
+  </app-text-writer>
+</ng-container>
