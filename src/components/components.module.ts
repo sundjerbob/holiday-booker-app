@@ -19,14 +19,15 @@ import {BasicOfferComponent} from './basic-offer/basic-offer.component';
     BasicOfferComponent
   ],
   imports: [CommonModule, NgOptimizedImage],
-  exports: [
-    LightSwitchComponent,
-    TopNavigationComponent,
-    BillboardComponent,
-    TextWriterComponent,
-    TextBillboardComponent,
-    ReservationSearchComponent
-  ]
+    exports: [
+        LightSwitchComponent,
+        TopNavigationComponent,
+        BillboardComponent,
+        TextWriterComponent,
+        TextBillboardComponent,
+        ReservationSearchComponent,
+        BasicOfferComponent
+    ]
 })
 
 export class ComponentsModule {
