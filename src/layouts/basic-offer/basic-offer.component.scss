@@ -1,6 +1,6 @@
 .basic-offer {
 
-  width: min-content;
+  width: 76vw;
   height: min-content;
   margin-left: auto;
   margin-right: auto;
@@ -24,7 +24,7 @@
 
 
       img.preview {
-        margin-right: 10px;
+        margin-right: 15px;
         width: 250px;
         height: 300px;
       }
@@ -133,5 +133,10 @@
     font-size: 20px;
   }
 
+
+  .highlighted-val {
+    color: #656F76;
+    font-weight: 600;
+  }
 }
 

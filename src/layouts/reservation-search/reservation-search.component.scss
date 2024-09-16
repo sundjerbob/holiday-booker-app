@@ -2,14 +2,20 @@
 
 .reservation-search {
 
-  width: 65vw;
+  width: 76vw;
 
   background: #FFFFFF;
-  padding: 25px 20px 10px;
+
+  padding: 20px 20px 25px;
   border-radius: 12px; /* Increase the visibility of the border radius */
   border: 1px solid #EFEFEF;
-  height: 180px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  height: 170px;
+
+
+  // novo
+  box-shadow: 0 40px 90px -5px #D3D6DA7D;
+
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -21,13 +27,14 @@
     text-align: center;
     font-size: 24px;
     font-weight: 600;
+    transform: translateY(+7px);
   }
 
   .reservation-form {
 
     background: #FAFAF5;
     height: 80px;
-    padding: 10px 20px;
+    padding: 15px 70px;
     border-radius: 12px; /* Increase the visibility of the border radius */
     display: flex;
     justify-content: space-between;
@@ -98,8 +105,8 @@
     }
 
     .search-button {
-      width: 200px; /* Fixed width */
-      height: 68px; /* Reduced height */
+      width: 160px; /* Fixed width */
+      height: 55px; /* Reduced height */
       background: #0B2434;
       color: #FFFFFF;
       border: none;
