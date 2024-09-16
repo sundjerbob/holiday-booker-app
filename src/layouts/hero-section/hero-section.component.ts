@@ -27,7 +27,7 @@ export class HeroSectionComponent implements OnInit {
   public currentDisplayedIndex: number = 0;
 
 
-  private scrollOffset = 50; //scroll offset value
+  private scrollOffset = 65; //scroll offset value
   public isThresholdPassed: boolean = false;
 
   @HostListener('window:scroll')

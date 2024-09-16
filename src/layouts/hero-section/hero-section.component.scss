@@ -54,11 +54,11 @@
     top: calc(100% - 80px);
     left: 50%;
     transform: translateX(-50%);
-    transition: transform 0.5s ease, top 0.5s ease; /* Add transition for smooth animation */
+    transition: all 0.3s ease;
   }
 
   app-reservation-search:hover {
-    top: calc(100% - 250px);
+    transform: translate(-50%, -60%);
   }
 
 
@@ -66,7 +66,9 @@
 
 
     app-reservation-search:hover {
-      top: calc(100% - 80px);
+
+
+      transform: translateX(-50%);
     }
   }
 
