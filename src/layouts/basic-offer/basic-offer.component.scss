@@ -2,14 +2,20 @@
 
   width: min-content;
   height: min-content;
-  background-color: #FFFFFF;
-  margin: auto;
-  border: 1px solid gray;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  margin-top: 25vh;
+
+  //background-color: #FFFFFF;
+  //border: 1px solid gray;
+
 
   .top {
     display: flex;
     flex-direction: row;
     padding: 10px;
+    height: 400px;
 
     .group-1 {
       display: flex;
@@ -27,10 +33,14 @@
     }
 
     p.bg-color {
-      line-height: 50px;
+      line-height: 30px;
+      //position: relative;
+      //bottom: 100%;
+
       background-color: #F6F6E4;
       border-radius: 4px;
       padding: 5px;
+
     }
 
   }
@@ -108,7 +118,7 @@
   }
 
   .divider {
-    height: 450px;
+    height: 100%;
     width: 1px;
     background-color: #E6E3E3;
     margin-left: 20px;

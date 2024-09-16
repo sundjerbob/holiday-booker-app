@@ -1,9 +1,9 @@
-import {Component} from '@angular/core';
+import {Component, HostListener} from '@angular/core';
 
 @Component({
   selector: 'app-hero-section',
   templateUrl: './hero-section.component.html',
-  styleUrls: ['./hero-section.component.scss']
+  styleUrl: './hero-section.component.scss'
 })
 export class HeroSectionComponent {
 
@@ -16,5 +16,18 @@ export class HeroSectionComponent {
     'Because I got it on me , u can run up if u want'
   ];
 
+  // ovo index je slide show
   public currentDisplayedIndex: number = 0;
+
+
+  private searchScrollOffset = 2; // New offset value
+  public isThresholdPassed: boolean = false;
+
+  @HostListener('window:scroll', [])
+  onScroll(): void {
+    let yScroll  = window.scrollY || document.documentElement.scrollTop || 0;
+    this.isThresholdPassed = yScroll > this.searchScrollOffset;
+    if(this.isThresholdPassed)
+      console.log('beboribeboribebo');
+  }
 }

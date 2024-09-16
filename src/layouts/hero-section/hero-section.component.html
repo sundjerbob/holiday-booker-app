@@ -1,6 +1,6 @@
 <!-- hero-section-component.html -->
 
-<div class="hero-section">
+<div class="hero-section" [class.yScrollOffsetPassed]="this.isThresholdPassed">
   <app-billboard-component
     [currentDisplayedIndex]="currentDisplayedIndex">
   </app-billboard-component>
@@ -17,12 +17,17 @@
 
   </div>
 
+  <app-action-button>
+  </app-action-button>
+
 
   <app-light-switch
-    [initialNumber]="4"
-    [selectedSwitchIndex]="currentDisplayedIndex"
-    (selectedSwitchChange)="currentDisplayedIndex = $event">
+    [initialSelectedIndex]=this.currentDisplayedIndex
+    [numberOfSwitches]="4"
+    (selectedSwitchChange)="this.currentDisplayedIndex = $event">
   </app-light-switch>
+
+
 
   <app-reservation-search>
 

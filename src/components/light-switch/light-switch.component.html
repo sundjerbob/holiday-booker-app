@@ -4,7 +4,7 @@
        (click)="selectSwitch(i)"
        id="{{'div-' + i}}"
        [ngClass]="{'selected': i === selectedSwitchIndex}"
-       [ngStyle]="{'margin-right': initialNumber - 1 === i ? '0' : '15px'}"> <!-- Adjusted spacing here -->
+       [ngStyle]="{'margin-right': numberOfSwitches - 1 === i ? '0' : '15px'}"> <!-- Adjusted spacing here -->
   </div>
 
 </div>

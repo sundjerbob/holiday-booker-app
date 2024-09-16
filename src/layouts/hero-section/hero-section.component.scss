@@ -38,6 +38,17 @@
     transform: translate(-50%, -50%); /* Center it horizontally */
   }
 
+
+
+  app-action-button {
+    position: absolute;
+    left: 50vw;
+    top: 50vh;
+    transform: translate(-50%, -50%);
+  }
+
+
+
   app-reservation-search {
     position: absolute;
     top: calc(100% - 80px);
@@ -47,7 +58,16 @@
   }
 
   app-reservation-search:hover {
-    top: calc(100% - 250px); /* Bring the component up by 150px */
-    transform: translateX(-50%); /* Ensure it remains centered */
+    top: calc(100% - 250px);
   }
+
+
+  &.yScrollOffsetPassed {
+
+
+    app-reservation-search:hover {
+      top: calc(100% - 250px);
+    }
+  }
+
 }

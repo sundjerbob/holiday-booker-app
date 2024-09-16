@@ -7,18 +7,18 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class LightSwitchComponent implements OnInit {
 
-  divsToGenerate: number[] = [];
-
-  @Input() selectedSwitchIndex!: number;
-
-  @Input() initialNumber!: number;
-
+  @Input() numberOfSwitches: number = 5;
+  @Input() initialSelectedIndex: number = 0;
   @Output() selectedSwitchChange = new EventEmitter<number>();
+
+  divsToGenerate: number[] = [];
+  selectedSwitchIndex: number = 0;
 
   constructor() { }
 
   ngOnInit(): void {
-    this.initDivs(this.initialNumber);
+    this.initDivs(this.numberOfSwitches);
+    this.selectedSwitchIndex = this.initialSelectedIndex;
   }
 
   private initDivs(numberOfDivs: number): void {
@@ -31,4 +31,3 @@ export class LightSwitchComponent implements OnInit {
   }
 }
 
-export default LightSwitchComponent;

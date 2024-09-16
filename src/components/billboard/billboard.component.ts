@@ -5,7 +5,7 @@ import {animate, state, style, transition, trigger} from '@angular/animations';
 
   selector: 'app-billboard-component',
   templateUrl: './billboard.component.html',
-  styleUrls: ['./billboard.component.scss'],
+  styleUrl: './billboard.component.scss',
 
   animations: [
 

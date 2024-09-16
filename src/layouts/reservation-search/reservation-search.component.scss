@@ -2,6 +2,8 @@
 
 .reservation-search {
 
+  width: 65vw;
+
   background: #FFFFFF;
   padding: 25px 20px 10px;
   border-radius: 12px; /* Increase the visibility of the border radius */
@@ -118,11 +120,7 @@
       }
     }
 
-    .search-button:hover {
-      img {
-        zoom: 1.1;
-      }
-    }
+
 
   }
 }
