@@ -1,12 +1,19 @@
-import {Component, HostListener} from '@angular/core';
+import {Component, HostListener, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-hero-section',
   templateUrl: './hero-section.component.html',
-  styleUrl: './hero-section.component.scss'
+  styleUrls: ['./hero-section.component.scss']
 })
-export class HeroSectionComponent {
+export class HeroSectionComponent implements OnInit {
 
+  constructor() {
+    console.log('HeroSectionComponent constructor');
+  }
+
+  ngOnInit(): void {
+    console.log('HeroSectionComponent ngOnInit');
+  }
 
   texts: string[] = [
     'Where you can explore the enchanting Adriatic Sea and historic charm.',
@@ -20,14 +27,15 @@ export class HeroSectionComponent {
   public currentDisplayedIndex: number = 0;
 
 
-  private searchScrollOffset = 2; // New offset value
+  private scrollOffset = 50; //scroll offset value
   public isThresholdPassed: boolean = false;
 
-  @HostListener('window:scroll', [])
+  @HostListener('window:scroll')
   onScroll(): void {
-    let yScroll  = window.scrollY || document.documentElement.scrollTop || 0;
-    this.isThresholdPassed = yScroll > this.searchScrollOffset;
-    if(this.isThresholdPassed)
-      console.log('beboribeboribebo');
+    const scrollPosition = window.scrollY || document.documentElement.scrollTop || 0;
+    this.isThresholdPassed = scrollPosition > this.scrollOffset;
+    // DEBUG
+    // console.log('Scroll position:', scrollPosition, 'Threshold passed:', this.isThresholdPassed);
   }
+
 }
