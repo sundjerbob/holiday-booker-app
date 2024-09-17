@@ -5,37 +5,36 @@
   font-size: 50px;
   width: 100vw;
   height: 100vh;
-  position: relative; /* Ensure relative positioning for the parent */
+  position: relative;
   background-color: white;
 
   .title {
-    position: absolute; /* Position absolutely within the parent */
-    top: 40%; /* Adjust to slightly above the center */
-    left: 50%; /* Move to the center horizontally */
-    transform: translate(-50%, -50%); /* Offset by half of its own width and height */
-    text-align: center; /* Center text horizontally */
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
     color: #FFFFFF;
 
-    h1 {
-      font-size: 62px;
-      line-height: 75px;
+    span {
+      font-size: 64px;
+      line-height: 76px;
       font-weight: 600;
-      margin: 0; /* Remove default margin */
     }
 
     .text-billboard {
-      font-size: 26px;
-      line-height: 50px;
-      font-weight: 200;
+      font-size: 20px;
+      line-height: 34px;
+      font-weight: 400;
     }
   }
 
 
   app-light-switch {
     position: absolute;
-    top: 80%; /* Position it slightly below the title */
+    top: 80%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Center it horizontally */
+    transform: translate(-50%, -50%);
   }
 
 

@@ -13,22 +13,23 @@
           <span class="main-title">BASIC OFFER</span>
 
           <span class="check-point">
-            <img alt="check-circle-icon" ngSrc="../../assets/icons/check-circle.svg" height="19" width="18">
+
+            <img [style.transform]="'translateY(-1px)'" alt="check-circle-icon" ngSrc="../../assets/icons/check-circle.svg" height="19" width="18">
             Seven-Day Accommodation With Breakfast
           </span>
 
           <span class="check-point">
-            <img alt="check-circle-icon" ngSrc="../../assets/icons/check-circle.svg" height="19" width="18">
+            <img [style.transform]="'translateY(-1px)'" alt="check-circle-icon" ngSrc="../../assets/icons/check-circle.svg" height="19" width="18">
             A City Tour Accompanied By A Tour Guide
           </span>
 
-          <span class="check-point ">
-            <img alt="check-circle-icon" ngSrc="../../assets/icons/check-circle.svg" height="19" width="18">
-            Transfer From Tivat Airport To The Accommodation
-          </span>
+          <div class="check-point ">
+            <img [style.transform]="'translateY(-1px)'" alt="check-circle-icon" ngSrc="../../assets/icons/check-circle.svg" height="19" width="18">
+            <span> Transfer From Tivat Airport To The Accommodation </span>
+          </div>
 
           <span class="check-point">
-            <img alt="check-circle-icon" ngSrc="../../assets/icons/check-circle.svg" height="19" width="18">
+            <img [style.transform]="'translateY(-12px)'" alt="check-circle-icon" ngSrc="../../assets/icons/check-circle.svg" height="19" width="18">
             Transports From Other Airports Can Be Arranged For An Additional Fee.
           </span>
 
@@ -43,7 +44,7 @@
 
     <div class="divider"> </div>
 
-    <div class="group-2 ">
+    <div class="group-2">
       <span class="section-title">Discount Based On Number Of People:</span>
 
       <span class="check-point">
@@ -66,13 +67,13 @@
       <span class="check-point">
             <img alt="check-circle-icon" ngSrc="../../assets/icons/check-circle.svg" height="19" width="18">
             Children Up To 2 Years Old:
-            <span class="highlighted-val">Free</span>
+            <span [style.margin-left]="'5px'" class="highlighted-val">Free</span>
       </span>
 
-      <span class="check-point ">
+      <span class="check-point">
             <img alt="check-circle-icon" ngSrc="../../assets/icons/check-circle.svg" height="19" width="18">
             Children Aged 2 To 12 Years:
-        <span class="highlighted-val">50% Off</span>
+        <span [style.margin-left]="'5px'" class="highlighted-val">50% Off</span>
 
       </span>
 
@@ -83,13 +84,13 @@
 
     <div class="group-3">
 
-      <p class="main-price ">
+      <p class="main-price sora-font">
         $1350
-        <span>Per Night</span>
       </p>
+      <p>Per Night</p>
 
 
-      <div class="action-button ">
+      <div class="action-button">
         Book Now
       </div>
 

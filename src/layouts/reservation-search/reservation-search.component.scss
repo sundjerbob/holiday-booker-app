@@ -2,20 +2,20 @@
 
 .reservation-search {
 
-  width: 76vw;
+  width: 1198px;
+  height: 209px;
+  box-shadow: 0 40px 90px -5px #D3D6DA7D;
   background: #FFFFFF;
   padding: 20px 20px 25px;
-  border-radius: 12px; /* Increase the visibility of the border radius */
+  border-radius: 8px; /* Increase the visibility of the border radius */
   border: 1px solid #EFEFEF;
-  height: 170px;
-  box-shadow: 0, 40px 90px -5px #D3D6DA7D;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 20px;
 
 
   .reservation-title {
-    height: 55px;
+    height: 41px;
     text-align: center;
     font-size: 24px;
     font-weight: 600;
@@ -26,16 +26,16 @@
   .reservation-form {
 
     background: #FAFAF5;
-    height: 80px;
-    padding: 15px 70px;
-    border-radius: 12px; /* Increase the visibility of the border radius */
+    height: 108px;
+    padding: 20px;
+    border-radius: 8px; /* Increase the visibility of the border radius */
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: 20px; /* Gap between form groups */
+    gap: 40px; /* Gap between form groups */
 
     .form-group {
-      height: 45px;
+
+      height: 48px;
       width: 240px; /* Fill width */
       display: flex;
       flex-direction: row;
@@ -87,13 +87,13 @@
 
     .divider {
       width: 1px;
-      height: 45px; /* Adjust height as needed */
-      background-color: #E4E4E4; /* Divider color */
+      height: 45px;
+      background-color: #E4E4E4;
     }
 
     .search-button {
-      width: 160px; /* Fixed width */
-      height: 55px; /* Reduced height */
+      width: 219px;
+      height: 68px;
       background: #0B2434;
       color: #FFFFFF;
       border: none;
@@ -103,17 +103,37 @@
       align-items: center;
       justify-content: center;
       gap: 6px;
-      font-size: 20px;
+      line-height: 28px;
+      font-size: 18px;
+      font-weight: 500;
+      transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
 
       img {
         width: 20px;
-
         height: 21px;
-
-        transition: 0.15s;
+        transition: transform 0.2s ease;
       }
     }
 
+    .search-button:hover {
+      background-color: #092031;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      transform: translateY(-2px);
+    }
+
+    .search-button:active {
+      background-color: #081a29;
+      transform: translateY(0);
+    }
+
+    .search-button:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(9, 32, 49, 0.5);
+    }
+
+    .search-button:hover img {
+      transform: scale(1.1);
+    }
 
 
   }

@@ -17,7 +17,7 @@ export class HeroSectionComponent implements OnInit {
 
   texts: string[] = [
     'Where you can explore the enchanting Adriatic Sea and historic charm.',
-    'Where you can explore the enchanting Adriatic Sea and historic charm.',
+    'I got bigg bals in this bih.',
     'Mole vas Cicvanic i sinovi',
     'Dodjite ameri molem vas',
     'Because I got it on me , u can run up if u want'

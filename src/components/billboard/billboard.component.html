@@ -2,9 +2,12 @@
 
 <div class="billboard">
   <div *ngFor="let img of imageIndices">
-    <div class="image"
-         [@imgState]="(img.idx === currentDisplayedIndex) ? 'on' : 'off'"
-         [style.background-image]="'url(' + img.src + ')'">
+    <div
+      class="image"
+      [@imgState]="(img.idx === currentDisplayedIndex) ? 'on' : 'off'"
+      [style.background-image]="'url(' + img.src + ')'"
+      [class.apply-gradient]="shouldApplyGradient(img.idx)"
+    >
     </div>
   </div>
 </div>
