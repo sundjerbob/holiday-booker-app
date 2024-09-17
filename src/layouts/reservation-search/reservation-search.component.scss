@@ -6,17 +6,17 @@
   height: 209px;
   box-shadow: 0 40px 90px -5px #D3D6DA7D;
   background: #FFFFFF;
-  padding: 20px 20px 25px;
-  border-radius: 8px; /* Increase the visibility of the border radius */
+  border-radius: 8px;
   border: 1px solid #EFEFEF;
   display: flex;
   flex-direction: column;
   gap: 20px;
-
+  padding-left: 20px;
+  padding-right: 20px;
 
   .reservation-title {
-    height: 41px;
     text-align: center;
+    line-height: 41px;
     font-size: 24px;
     font-weight: 600;
     color: #0B2434;
@@ -26,114 +26,153 @@
   .reservation-form {
 
     background: #FAFAF5;
-    height: 108px;
     padding: 20px;
-    border-radius: 8px; /* Increase the visibility of the border radius */
+    border-radius: 8px;
     display: flex;
     align-items: center;
-    gap: 40px; /* Gap between form groups */
+    gap: 40px;
 
     .form-group {
-
       height: 48px;
-      width: 240px; /* Fill width */
+      width: 240px;
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: start;
+      bottom: 100%;
 
       img {
         width: 60px;
         height: 60px;
+        margin-right: 10px;
       }
 
       .input-group {
-        justify-content: center;
+        justify-content: space-between;
         display: flex;
         flex-direction: column;
         align-items: start;
-        margin-top: auto;
-        margin-bottom: auto;
         width: 160px;
+        gap: 8px;
+
 
         .form-label {
-          padding-left: 12px;
           font-size: 14px;
-          font-weight: 500;
-          line-height: 18px;
+          line-height: 16px;
           text-align: left;
           color: #9C9C9C;
+          font-weight: 500;
+          font-family: 'Poppins', serif;
+          font-optical-sizing: auto;
+          font-style: normal;
+          padding-left: 3px;
         }
-
 
         .form-input {
           font-size: 16px;
-          font-weight: 500;
-          line-height: 12px;
+          line-height: 24px;
           text-align: left;
-          padding: 10px;
           border-radius: 5px;
           color: #616161;
           background: transparent;
-          width: 100%; /* Fill width */
+          width: 100%;
           cursor: pointer;
           border: 1px solid transparent;
 
+          font-weight: 500;
+          font-family: 'Poppins', serif;
+          font-optical-sizing: auto;
+          font-style: normal;
+
         }
       }
-
-
     }
 
     .divider {
       width: 1px;
-      height: 45px;
+      height: 42px;
       background-color: #E4E4E4;
     }
+
+
+    /* reservation-search.scss */
 
     .search-button {
       width: 219px;
       height: 68px;
-      background: #0B2434;
+      background-color: #0B2434;
       color: #FFFFFF;
       border: none;
       border-radius: 5px;
       cursor: pointer;
-      display: flex;
+      position: relative;
+      overflow: hidden; /* Hide overflow for pseudo-element animations */
+      display: inline-flex;
       align-items: center;
       justify-content: center;
       gap: 6px;
       line-height: 28px;
       font-size: 18px;
-      font-weight: 500;
+      outline: none;
       transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+
+      text-decoration: none;
+      font-weight: 500;
+      font-family: 'Poppins', serif;
+      font-optical-sizing: auto;
+      font-style: normal;
 
       img {
         width: 20px;
         height: 21px;
-        transition: transform 0.2s ease;
+        transition: transform 0.3s ease;
+      }
+
+      /* Glow effect */
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -150%; /* Start well outside the button */
+        width: 50%; /* Width of the glow */
+        height: 100%;
+        background: linear-gradient(
+            120deg,
+            transparent,
+            rgba(255, 255, 255, 0.4),
+            transparent
+        );
+        transform: skewX(-45deg);
+        opacity: 0; /* Hide the glow effect initially */
+        transition: left 0.7s ease, opacity 0.7s ease;
+      }
+
+      &:hover::before {
+        opacity: 1; /* Show the glow effect */
+        left: 150%; /* Move the glow across and outside the button */
+      }
+
+      &:hover {
+        background-color: #092031;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        transform: translateY(-3px);
+      }
+
+      &:hover img {
+        transform: scale(1.2) rotate(44deg);
+      }
+
+      &:active {
+        background-color: #081a29;
+        transform: translateY(0);
+      }
+
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(9, 32, 49, 0.5);
       }
     }
 
-    .search-button:hover {
-      background-color: #092031;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-      transform: translateY(-2px);
-    }
-
-    .search-button:active {
-      background-color: #081a29;
-      transform: translateY(0);
-    }
-
-    .search-button:focus {
-      outline: none;
-      box-shadow: 0 0 0 3px rgba(9, 32, 49, 0.5);
-    }
-
-    .search-button:hover img {
-      transform: scale(1.1);
-    }
 
 
   }

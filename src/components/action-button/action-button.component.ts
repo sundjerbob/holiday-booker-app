@@ -1,10 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-action-button',
   templateUrl: './action-button.component.html',
-  styleUrl: './action-button.component.scss'
+  styleUrls: ['./action-button.component.scss']
 })
 export class ActionButtonComponent {
-
+  @Input() onClick: () => void = () => {
+    console.log('ActionButtonComponent click!');
+  };
 }

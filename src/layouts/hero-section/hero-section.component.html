@@ -1,12 +1,15 @@
 <!-- hero-section-component.html -->
 
 <div class="hero-section" [class.yScrollOffsetPassed]="isThresholdPassed">
+
+  <!-- background slideshow -->
   <app-billboard-component
     [currentDisplayedIndex]="currentDisplayedIndex">
   </app-billboard-component>
 
-  <div class="title sora-font">
-    <span>
+  <div class="center sora-font">
+
+    <span class = "main-title">
       Welcome to Montenegro
     </span>
 
@@ -15,10 +18,10 @@
                         [currentDisplayedIndex]="currentDisplayedIndex">
     </app-text-billboard>
 
-  </div>
+    <app-action-button [onClick]="bookNowOnClick">
+    </app-action-button>
 
-  <app-action-button>
-  </app-action-button>
+  </div>
 
 
   <app-light-switch

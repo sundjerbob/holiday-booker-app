@@ -6,6 +6,7 @@ import {BasicOfferComponent} from "./basic-offer/basic-offer.component";
 import {TopNavigationComponent} from "./navigation/top-navigation.component";
 import {ActionButtonComponent} from "../components/action-button/action-button.component";
 import {ReservationSearchComponent} from "./reservation-search/reservation-search.component";
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 @NgModule({
   imports: [
@@ -18,7 +19,8 @@ import {ReservationSearchComponent} from "./reservation-search/reservation-searc
     HeroSectionComponent,
     BasicOfferComponent,
     ActionButtonComponent,
-    ReservationSearchComponent
+    ReservationSearchComponent,
+    ContactUsComponent
 
   ],
   exports: [
@@ -26,7 +28,8 @@ import {ReservationSearchComponent} from "./reservation-search/reservation-searc
     HeroSectionComponent,
     BasicOfferComponent,
     ActionButtonComponent,
-    ReservationSearchComponent
+    ReservationSearchComponent,
+    ContactUsComponent
 
   ]
 })
