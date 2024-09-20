@@ -7,6 +7,7 @@ import {TopNavigationComponent} from "./navigation/top-navigation.component";
 import {ActionButtonComponent} from "../components/action-button/action-button.component";
 import {ReservationSearchComponent} from "./reservation-search/reservation-search.component";
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   imports: [
@@ -20,7 +21,8 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     BasicOfferComponent,
     ActionButtonComponent,
     ReservationSearchComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    FooterComponent
 
   ],
   exports: [
@@ -29,7 +31,8 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     BasicOfferComponent,
     ActionButtonComponent,
     ReservationSearchComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    FooterComponent
 
   ]
 })

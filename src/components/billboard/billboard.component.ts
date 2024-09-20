@@ -33,10 +33,10 @@ export class BillboardComponent implements OnInit {
   @Input() currentDisplayedIndex: number = 0; // Ensure default value is 0
 
   public imageIndices: imageObj[] = [
-    { idx: 0, src: '/assets/hero_section/screen1.svg' },
-    { idx: 1, src: '/assets/hero_section/screen2.jpg' },
-    { idx: 2, src: '/assets/hero_section/screen3.jpg' },
-    { idx: 3, src: '/assets/hero_section/screen4.jpg' },
+    { idx: 0, src: '/assets/hero-section/screen1.svg' },
+    { idx: 1, src: '/assets/hero-section/screen2.jpg' },
+    { idx: 2, src: '/assets/hero-section/screen3.jpg' },
+    { idx: 3, src: '/assets/hero-section/screen4.jpg' },
   ];
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object) { }
