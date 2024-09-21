@@ -1,34 +1,21 @@
 /* footer.component.scss */
 
 .footer {
-  position: absolute;
+
+  position: relative;
   bottom: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   height: 524px;
-
   padding-top: 67px;
   background: #0F2C3F;
 
   .content {
-    background: purple;
+    color: #FFFFFF;
     width: 1197px;
     height: min-content;
-
-    .filler-1 {
-      background: yellowgreen;
-      width: 100%;
-      height: 92px;
-    }
-
-    .filler-2 {
-      background: yellowgreen;
-
-      width: 100%;
-      height: 47px;
-    }
 
 
     div {
@@ -37,26 +24,208 @@
       //justify-content: center; only for some.
     }
 
-    .group-1 {
-      height: 208px;
-      background: red;
+    .group-1, .group-2, .group-3, .group-4 {
+      display: flex;
+      flex-direction: row;
     }
 
-    .group-2 {
-      height: 102px;
-      background: blueviolet;
+    .section-title {
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: 400;
+      margin-bottom: 36px;
+    }
 
-      img.payment-methods {
-        background: #0F2C3F;
+    .section-item {
+      font-size: 16px;
+      line-height: 19px;
+      font-weight: 400;
+      margin-bottom: 24px;
+    }
+
+    // MAIN GROUP - 1
+    .group-1 {
+
+      align-items: center;
+      height: 208px;
+      margin-bottom: 92px;
+      //background: #3D9AD6;
+
+      .group-1-1 {
+        width: 206px;
+        height: 100%;
+      }
+
+      .group-1-2 {
+        margin-left: 115px;
+        width: 130px;
+        height: 100%;
+      }
+
+      .group-1-3 {
+        margin-left: 140px;
+        width: 80px;
+        height: 100%;
+      }
+
+
+      .group-1-4 {
+
+        background: #df3f3f;
+        height: 200px;
+        width: 426px;
+        margin-left: 145px;
+
+        .group-1-4-1 {
+
+          display: flex;
+          flex-direction: row;
+          width: 426px;
+          height: 140px;
+          gap: 24px;
+
+          .address-info, .phone-info, .email-info {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            .icon-holder {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+              background: #1b3749;
+            }
+
+            .info {
+              display: flex;
+              flex-direction: column;
+              margin-left: 16px;
+
+              span {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+              }
+            }
+          }
+
+          .address-info {
+            margin-bottom: 36px;
+          }
+
+          .email-info .info {
+            justify-content: center;
+            align-items: center;
+          }
+
+
+          .group-1-4-1-1 {
+            width: 198px;
+            height: 140px;
+            background: #ffcc00;
+          }
+
+          .group-1-4-1-2 {
+            width: 205px;
+            height: 140px;
+            background: #cae1ff;
+          }
+        }
       }
     }
 
+
+    // MAIN GROUP - 2
+    .group-2 {
+      height: 102px;
+      margin-bottom: 47px;
+      gap: 445px;
+
+      .newsletter-form {
+        height: 100%;
+        width: 412px;
+
+        .form-title {
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 22px;
+          margin-bottom: 24px;
+        }
+
+        .input-form {
+          width: 100%;
+          height: 56px;
+          display: flex;
+          flex-direction: row;
+
+          input {
+            flex-grow: 1;
+            //width: 412px;
+            height: 100%;
+            background: #1b3749;
+            padding-left: 24px;
+            border: 0;
+            color: #FEFEFE;
+
+            /* Placeholder Styling */
+            &::placeholder {
+              color: #FEFEFE;
+              //color: #EAF4FB;
+              opacity: 1; /* Ensures the color is applied */
+            }
+
+            /* Vendor Prefixes for Cross-Browser Compatibility */
+            &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+              color: #FEFEFE;
+              //color: #EAF4FB;
+              opacity: 1;
+            }
+            &::-moz-placeholder { /* Firefox 19+ */
+              color: #FEFEFE;
+              //color: #EAF4FB;
+              opacity: 1;
+            }
+            &:-ms-input-placeholder { /* IE 10+ */
+              color: #EAF4FB;
+              opacity: 1;
+            }
+            &::-ms-input-placeholder { /* Microsoft Edge */
+              color: #EAF4FB;
+              opacity: 1;
+            }
+
+          }
+
+          .action-button {
+            width: 134px;
+            height: 100%;
+            color: #0F2C3F;
+            background: #E5E7CB;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            &:hover {
+              transform: scale(1.05);
+            }
+          }
+
+        }
+      }
+    }
+
+    // MAIN GROUP - 3
     .group-3 {
       background: green;
       height: 24px;
 
-
     }
   }
-
 }

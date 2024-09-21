@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-light-switch',
@@ -29,5 +29,15 @@ export class LightSwitchComponent implements OnInit {
     this.selectedSwitchIndex = index;
     this.selectedSwitchChange.emit(this.selectedSwitchIndex);
   }
-}
 
+  @HostListener('keydown', ['$event'])
+  handleKeyboardEvent(event: KeyboardEvent) {
+    if (event.key === 'ArrowRight') {
+      this.selectSwitch((this.selectedSwitchIndex + 1) % this.numberOfSwitches);
+      event.preventDefault();
+    } else if (event.key === 'ArrowLeft') {
+      this.selectSwitch((this.selectedSwitchIndex - 1 + this.numberOfSwitches) % this.numberOfSwitches);
+      event.preventDefault();
+    }
+  }
+}
