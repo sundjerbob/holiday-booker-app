@@ -49,7 +49,6 @@
       align-items: center;
       height: 208px;
       margin-bottom: 92px;
-      //background: #3D9AD6;
 
       .group-1-1 {
         width: 206px;
@@ -71,7 +70,6 @@
 
       .group-1-4 {
 
-        background: #df3f3f;
         height: 200px;
         width: 426px;
         margin-left: 145px;
@@ -125,13 +123,11 @@
           .group-1-4-1-1 {
             width: 198px;
             height: 140px;
-            background: #ffcc00;
           }
 
           .group-1-4-1-2 {
             width: 205px;
             height: 140px;
-            background: #cae1ff;
           }
         }
       }
@@ -223,8 +219,23 @@
 
     // MAIN GROUP - 3
     .group-3 {
-      background: green;
+      //background: green;
       height: 24px;
+      justify-content: space-between;
+
+      .copy-right {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 19px;
+      }
+
+      .social-networks {
+        gap: 40px;
+        height: 100%;
+        width: 216px;
+        display: flex;
+        flex-direction: row;
+      }
 
     }
   }
