@@ -1,0 +1,37 @@
+<!-- -->
+
+<div class="tour-preview">
+  <!-- Tour Name -->
+  <h2 class="tour-name">{{ tour.name }}</h2>
+
+  <!-- Duration and Price -->
+  <div class="tour-details">
+    <span class="tour-duration">Duration: {{ tour.duration }}</span>
+    <span class="tour-price">
+      Price: {{ tour.price | currency:tour.priceCurrency:'symbol':'1.2-2' }}{{ tour.priceSuffix }}
+    </span>
+  </div>
+
+  <!-- Options -->
+  <div class="tour-options">
+    <h3>Options:</h3>
+    <ul>
+      <li *ngFor="let option of tour.options">
+        <strong>{{ option.name }}</strong>
+        <ul>
+          <li *ngFor="let perk of option.perks">
+            <em>{{ perk.perk }}</em>
+            <ul>
+              <li *ngFor="let feature of perk.features">{{ feature }}</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Side Note -->
+  <div class="tour-side-note">
+    <p>{{ tour.sideNote }}</p>
+  </div>
+</div>

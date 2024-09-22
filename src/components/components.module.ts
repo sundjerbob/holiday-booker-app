@@ -5,6 +5,7 @@ import {LightSwitchComponent} from './light-switch/light-switch.component';
 import {BillboardComponent} from "./billboard/billboard.component";
 import {TextWriterComponent} from "./text-billboard/text-writer/text-writer.component";
 import {TextBillboardComponent} from "./text-billboard/text-billboard.component";
+import { TourPreviewComponent } from './tour-preview/tour-preview.component';
 
 @NgModule({
 
@@ -14,7 +15,8 @@ import {TextBillboardComponent} from "./text-billboard/text-billboard.component"
     LightSwitchComponent,
     BillboardComponent,
     TextWriterComponent,
-    TextBillboardComponent
+    TextBillboardComponent,
+    TourPreviewComponent
   ],
 
 
