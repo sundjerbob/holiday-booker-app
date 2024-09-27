@@ -5,6 +5,7 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
   selector: 'app-billboard-component',
   templateUrl: './billboard.component.html',
   styleUrls: ['./billboard.component.scss'],
+
   animations: [
     trigger('imgState', [
       state('off', style({
@@ -28,6 +29,7 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
     ])
   ]
 })
+
 export class BillboardComponent implements OnInit {
 
   @Input() currentDisplayedIndex: number = 0; // Ensure default value is 0

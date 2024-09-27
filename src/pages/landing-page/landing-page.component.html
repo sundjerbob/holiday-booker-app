@@ -4,6 +4,29 @@
   <app-navigation></app-navigation>
   <app-hero-section></app-hero-section>
   <app-basic-offer></app-basic-offer>
+  <app-tour-preview
+    [tour]="{
+        name: 'Gumno',
+        imageUrl: '/assets/tour-preview/tour-preview.svg',
+        description: 'Verry very preatty...',
+        options: [
+        {
+         name: 'Option 1 ',
+         price: {value: 70, currency: '$', suffix: 'Per Person' },
+         duration: '1:30 Hours',
+         perks: [
+            {perk: '2H ride with speedboat', features: []},
+            {perk: '20/30 min swimming and diving in Blue Cave', features: []},
+            {perk: 'Visit Mamula island', features: ['Njegoš’s birthplace', ' O King Nikola Castle', 'O Cetinje Monastery']},
+            {perk: 'Submarine base stop for 5/10 min', features: []}
+         ],
+         sideNote: 'Youuu',
+         },
+        ],
+        sideNote: 'My  peanuts',
+      }"
+  ></app-tour-preview>
+  <!--  <app-item-grid></app-item-grid>-->
   <app-contact-us></app-contact-us>
   <app-footer></app-footer>
 </div>

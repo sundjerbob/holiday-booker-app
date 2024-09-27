@@ -8,6 +8,7 @@ import {ActionButtonComponent} from "../components/action-button/action-button.c
 import {ReservationSearchComponent} from "./reservation-search/reservation-search.component";
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { FooterComponent } from './footer/footer.component';
+import { ItemGridComponent } from './item-grid/item-grid.component';
 
 @NgModule({
   imports: [
@@ -22,7 +23,8 @@ import { FooterComponent } from './footer/footer.component';
     ActionButtonComponent,
     ReservationSearchComponent,
     ContactUsComponent,
-    FooterComponent
+    FooterComponent,
+    ItemGridComponent
 
   ],
   exports: [
@@ -32,7 +34,8 @@ import { FooterComponent } from './footer/footer.component';
     ActionButtonComponent,
     ReservationSearchComponent,
     ContactUsComponent,
-    FooterComponent
+    FooterComponent,
+    ItemGridComponent
 
   ]
 })

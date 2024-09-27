@@ -24,7 +24,9 @@ import { TourPreviewComponent } from './tour-preview/tour-preview.component';
     LightSwitchComponent,
     BillboardComponent,
     TextWriterComponent,
-    TextBillboardComponent
+    TextBillboardComponent,
+    TourPreviewComponent
+
   ]
 })
 

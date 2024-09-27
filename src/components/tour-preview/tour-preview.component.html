@@ -1,37 +1,71 @@
-<!-- -->
+<!-- tour-preview.component.html -->
 
-<div class="tour-preview">
-  <!-- Tour Name -->
-  <h2 class="tour-name">{{ tour.name }}</h2>
+<div class="tour-preview sora-font">
 
-  <!-- Duration and Price -->
-  <div class="tour-details">
-    <span class="tour-duration">Duration: {{ tour.duration }}</span>
-    <span class="tour-price">
-      Price: {{ tour.price | currency:tour.priceCurrency:'symbol':'1.2-2' }}{{ tour.priceSuffix }}
-    </span>
+  <!--  left side -->
+
+  <div class="img-holder">
+
+    <img [ngSrc]="tour.imageUrl" alt="Tour Preview Image" [width]="450" [height]="570"/>
+
+    <div class="tour-info">
+
+      <span class="tour-name">{{ tour.name }}</span>
+      <span class="tour-description">{{ tour.description }}</span>
+
+    </div>
+
   </div>
 
-  <!-- Options -->
-  <div class="tour-options">
-    <h3>Options:</h3>
-    <ul>
-      <li *ngFor="let option of tour.options">
-        <strong>{{ option.name }}</strong>
-        <ul>
-          <li *ngFor="let perk of option.perks">
-            <em>{{ perk.perk }}</em>
-            <ul>
-              <li *ngFor="let feature of perk.features">{{ feature }}</li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-    </ul>
+  <!-- right side -->
+
+  <div class="options sora-font">
+
+    <span class="tour-title">{{ tour.name }}</span>
+
+    <div *ngFor="let option of tour.options" class="option-box">
+
+      <div class="option-header">
+
+        <span class="option-title">
+          <span>{{ option.name }}</span>
+        </span>
+
+        <div class="price-info">
+
+          <span class="price-and-suffix">
+
+            <span class="price">{{ option.price.value + ' ' + option.price.currency }}</span>
+
+            <span class="suffix">/{{ option.price.suffix }}</span>
+
+          </span>
+
+          <span class="duration">{{ option.duration }}</span>
+
+        </div>
+
+      </div>
+
+
+      <ng-container *ngFor="let perk of option.perks">
+
+        <span class="perk">
+          <img ngSrc="assets/icons/check-circle.svg" alt="circled-check icon" height="20" width="18">
+          {{ perk.perk }}
+        </span>
+
+        <span class="feature" *ngFor="let feature of perk.features">
+          <img ngSrc="assets/icons/check.svg" alt="check icon" width="16" height="20">
+          {{ feature }}
+        </span>
+
+      </ng-container>
+
+      <span class="side-note">{{ option.sideNote }}</span>
+
+    </div>
   </div>
 
-  <!-- Side Note -->
-  <div class="tour-side-note">
-    <p>{{ tour.sideNote }}</p>
-  </div>
 </div>
+
