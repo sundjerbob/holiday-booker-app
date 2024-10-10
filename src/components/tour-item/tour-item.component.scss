@@ -1,0 +1,142 @@
+/* tour-item.component.scss */
+
+.tour-item {
+  display: flex;
+  flex-direction: column;
+  width: 589px;
+  height: 801px;
+
+
+  .up {
+    height: 287px;
+    border: 1px solid #E7E4E4;
+    border-bottom: none;
+    background: #F6F6E4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    padding-bottom: 0;
+
+
+    img {
+      margin-top: 12px;
+      z-index: 0;
+      width: 95%;
+      height: 95%;
+      //border-radius: 20px;
+      object-fit: cover; /* Ensures the image covers the container without distortion */
+    }
+
+  }
+
+
+  .down {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    //background: #1b3749;
+
+
+    border: 1px solid #E7E4E4;
+    border-top: none;
+
+    .tour-title {
+      width: 100%;
+      height: min-content;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 40px;
+      margin-bottom: 10px;
+    }
+
+
+    .option-header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      height: 68px;
+
+      .option-title {
+        color: #0B2434;
+        line-height: 25px;
+        font-weight: 600;
+        font-size: 18px;
+      }
+
+      .price-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .price-and-suffix {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          .price {
+            color: #0B2434;
+            line-height: 36px;
+            font-size: 30px;
+            font-weight: 600;
+          }
+
+          .suffix {
+            color: #495054;
+          }
+        }
+
+        .duration {
+          color: #495054;
+        }
+      }
+    }
+
+
+    .perk, .feature {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #495054; /* Restore to original or desired color */
+    }
+
+    .perk {
+      margin-top: 15px;
+      margin-bottom: 6px;
+
+      .feature {
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+      }
+    }
+
+    .side-note {
+      margin-top: 12px;
+      font-size: 15px;
+      line-height: 25px;
+      font-weight: 600;
+      color: #0B2434;
+    }
+  }
+
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+
+    .tour-item {
+      width: 100%;
+      padding: 10px;
+
+      .up {
+        height: 200px; /* Adjust as needed */
+      }
+
+      .down {
+        width: 100%;
+      }
+    }
+  }
+}

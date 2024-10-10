@@ -1,26 +1,12 @@
-<!-- tour-preview.component.html -->
+<!-- tour-item.component.html -->
 
-<div class="tour-preview sora-font">
+<div class="tour-item">
 
-  <!--  left side -->
-
-  <div class="img-holder">
-
-    <img [ngSrc]="tour.imageUrl" alt="Tour Preview Image" [width]="450" [height]="380"/>
-
-    <div class="tour-info">
-
-      <span class="tour-name">{{ tour.name }}</span>
-
-      <span class="tour-description">{{ tour.description }}</span>
-
-    </div>
-
+  <div class="up">
+    <img [ngSrc]="tour.imageUrl" alt="Tour preview image" [width]="450" [height]="312"/>
   </div>
 
-  <!-- right side -->
-
-  <div class="options sora-font">
+  <div class="down sora-font">
 
     <span class="tour-title">{{ tour.name }}</span>
 
@@ -52,13 +38,13 @@
       <ng-container *ngFor="let perk of option.perks">
 
         <span class="perk">
-          <img ngSrc="assets/icons/check-circle.svg" alt="circled-check icon" height="20" width="18">
+          <img [ngSrc]="'/assets/icons/check-circle.svg'" alt="circled-check icon" height="20" width="18">
           {{ perk.perk }}
         </span>
 
         <span class="feature" *ngFor="let feature of perk.features">
 
-          <img ngSrc="assets/icons/check.svg" alt="check icon" width="16" height="20">
+          <img [ngSrc]="'/assets/icons/check.svg'" alt="check icon" width="16" height="20">
           {{ feature }}
         </span>
 
@@ -70,6 +56,7 @@
       </span>
 
     </div>
+
   </div>
 
 </div>

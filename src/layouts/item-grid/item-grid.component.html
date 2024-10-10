@@ -1,8 +1,11 @@
 <!-- src/app/components/item-grid/item-grid.component.html -->
 
 <div class="item-grid">
+
   <div class="title">Our Tours</div>
-  <div class="tour-grid">
-    <app-tour-preview *ngFor="let tour of tours" [tour]="tour"></app-tour-preview>
+
+  <div *ngIf="tours" class="tour-grid">
+    <app-tour-item *ngFor="let tour of tours" [tour]="tour"></app-tour-item>
   </div>
+
 </div>
