@@ -1,4 +1,4 @@
-// src/app/components/item-grid/item-grid.component.ts
+// item-grid.component.ts
 
 import {Component, Input} from '@angular/core';
 import {TourDto} from '../../dtos/tour/tour.dto';

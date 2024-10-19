@@ -5,8 +5,9 @@ import {LightSwitchComponent} from './light-switch/light-switch.component';
 import {BillboardComponent} from "./billboard/billboard.component";
 import {TextWriterComponent} from "./text-billboard/text-writer/text-writer.component";
 import {TextBillboardComponent} from "./text-billboard/text-billboard.component";
-import { TourPreviewComponent } from './tour-preview/tour-preview.component';
-import { TourItemComponent } from './tour-item/tour-item.component';
+import {TourPreviewComponent} from './tour-preview/tour-preview.component';
+import {TourItemComponent} from './tour-item/tour-item.component';
+import {PreviewModalComponent} from './preview-modal/preview-modal.component';
 
 @NgModule({
 
@@ -18,19 +19,20 @@ import { TourItemComponent } from './tour-item/tour-item.component';
     TextWriterComponent,
     TextBillboardComponent,
     TourPreviewComponent,
-    TourItemComponent
+    TourItemComponent,
+    PreviewModalComponent
   ],
 
 
-    exports: [
-        LightSwitchComponent,
-        BillboardComponent,
-        TextWriterComponent,
-        TextBillboardComponent,
-        TourPreviewComponent,
-        TourItemComponent
-
-    ]
+  exports: [
+    LightSwitchComponent,
+    BillboardComponent,
+    TextWriterComponent,
+    TextBillboardComponent,
+    TourPreviewComponent,
+    TourItemComponent,
+    PreviewModalComponent
+  ]
 })
 
 export class ComponentsModule {

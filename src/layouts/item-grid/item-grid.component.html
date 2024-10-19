@@ -2,10 +2,14 @@
 
 <div class="item-grid">
 
-  <div class="title">Our Tours</div>
+  <div class="title sora-font">
+    SEE OUR TOURS
+  </div>
 
   <div *ngIf="tours" class="tour-grid">
-    <app-tour-item *ngFor="let tour of tours" [tour]="tour"></app-tour-item>
+    <app-tour-item *ngFor="let tour of tours" [tour]="tour">
+      Ja sam pickica
+    </app-tour-item>
   </div>
 
 </div>

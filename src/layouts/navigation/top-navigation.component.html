@@ -1,13 +1,16 @@
-<!-- navigation.component -->
+<!-- navigation.component.html -->
 
 <div class="top-navigation">
+  <div class="content-holder">
+    <!-- Logo -->
+    <img [ngSrc]="'/assets/logo/logo.svg'" alt="Company Logo" class="logo" width="93" height="100" />
 
-  <img ngSrc="../../assets/logo/logo.svg" alt="Logo" class="logo" height="100" width="93">
-
-  <!-- menu -->
-  <span>Home</span>
-  <span>Programs</span>
-  <span>Login</span>
-  <span>Option</span>
-
+    <!-- Menu -->
+    <div class="menu sora-font">
+      <span>Home</span>
+      <span>Programs</span>
+      <span>Login</span>
+      <span>Option</span>
+    </div>
+  </div>
 </div>
